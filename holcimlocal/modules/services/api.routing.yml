@@ -1,0 +1,59 @@
+
+
+# API V1 endpoints
+api.test:
+  path: 'api/v1/test'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::test' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.getArticles:
+  path: 'api/v1/getArticles'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::getArticles' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.getProducts:
+  path: 'api/v1/getProducts'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::getProducts' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.getPqr:
+  path: 'api/v1/getPqr'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::getPqr' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.getLocations:
+  path: 'api/v1/getLocations'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::getLocations' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.getUsers:
+  path: 'api/v1/getUsers'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::getUsers' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.getSocialNetworks:
+  path: 'api/v1/getSocialNetworks'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::getSocialNetworks' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+api.validateUser:
+  path: 'api/v1/validateUser'
+  defaults: { _controller: '\Drupal\api\Controller\APIController::validateUser' }
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+  
